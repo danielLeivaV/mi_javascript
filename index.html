@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario de Encuesta</title>
+          <link rel="stylesheet" type="text/css" href="styles.css" />
+          <script src="codigo.js"></script>
+          <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web&display=swap');</style>
+      
+        </head>
+<body>
+    <form id="survey-form">
+    <h1 id="title">Formulario de Encuesta</h1>
+    <p id="description">Gracias por tomarse el tiempo para ayudarnos <br/>a mejorar nuestro servicio.</p>
+
+    <fieldset>
+	    <label> Nombre:<input type="text" id="name" name="name" required placeholder="Tu nombre" /></label>
+		
+        <label> Apellido:<input type="text" id="last-name" name="last-name"  placeholder="Tu apellido" required /></label>
+                
+
+		<label >E-mail:<input type="email" id="email" name="email" required placeholder="Tu e-mail"></label>
+			
+        <label >Edad
+				
+				<input type="number" id="number" name="number" min="10" max="100" required placeholder="Tu edad"/></label>
+</fieldset>
+<fieldset>
+		<div>
+			<p>Que sistema operativo movil utilizas?</p>
+			<select id="dropdown">
+				<option value="android">Android</option>
+				<option value="ios">IOS</option>
+				<option value="harmony">HarmonyOS 2</option>
+				<option value="otros">Otros</option>
+			</select>
+		</div>
+
+
+    </fieldset>
+    <fieldset>
+			<p>Gama que satisface tu necesidad</p>
+			<label>
+				<input type="radio" id="gamaAlta" name="group" value="gamaAlta" checked
+				class="redtext" for="gamaAlta"/>Gama Alta</label>
+			
+
+				<label>
+				<input type="radio" id="gamaMedia" name="group" value="gamaMedia"
+				class="redtext" for="gamaMedia">Gama Media</label>
+			
+
+				<label>
+				<input type="radio" id="gamaBaja" name="group" value="gamaBaja"
+				class="redtext" for="gamaBaja">Gama Baja</label>
+			
+			
+		
+
+		<div>
+			<p>Cuales son los usos que le das a tu movil?</p>
+			<label>
+			<input type="checkbox" id="llamadas" name="llamadas" value="Llamadas"
+			class="redtext" for="llamadas"> Llamadas</label>
+			<label>
+			<input type="checkbox" id="rs" name="rs" value="Rs"
+			class="redtext" for="rs"> Redes Sociales</label>
+			<input type="checkbox" id="juegos" name="juegos" value="Juegos"
+			class="redtext" for="juegos"> Juegos</label>
+		</div>
+</fieldset>
+<fieldset>
+		<div>
+			<p>Comentarios?</p>
+			<textarea name="bio" rows="3" cols="30" 
+			placeholder="Ingrese su texto..."></textarea>
+		</div>
+</fieldset>
+		<br/><br/>
+
+		<input type="submit" value="PROCESAR DATOS" id="submit">
+	
+</form>
+</div>
+</body>
+</html>
